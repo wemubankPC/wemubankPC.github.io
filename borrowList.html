@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>微木-借款管理</title>
+        <link rel="shortcut icon" href="images/icons.ico">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <!-- <script src="js/jquery-1.7.2.min.js"></script> -->
+        <script src="js/common.js"></script>
+        <script src="layer/layer.js"></script>
+    </head>
+    <body>
+    <!-- 回到顶部部分 -->
+    <div class="pageCheck-wrap">
+    	<ul class="pageCheck">
+    		<li class="back" id="scrollBack"></li>
+    	</ul>
+    </div>
+    <!-- 导航 -->
+    <div class="header-wrap bg_white"><input type="hidden" id="header-wrap">
+    	<div class="header clearfix">
+            <a href="./index.html"><h1 class="logo" title="微木"><!-- <img src="images/logo1.png" height="37" width="130" alt=""> --></h1></a>
+            <div class="nav">
+                <ul class="navList">
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="./borrow.html">借款</a></li>
+                    <li class="current"><a href="./myAccount.html">个人中心</a></li>
+                    <li>
+                        <a href="./CompanyProfile.html">关于我们</a>
+                        <div class="slideToggle">
+                            <a href="./CompanyProfile.html">公司简介</a>
+                            <a href="./dataOperation.html">数据运营</a>
+                            <a href="./joinWeiMu.html">加入微木</a>
+                            <a href="./ContactUs.html">联系我们</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./HelpCenterNew.html">常见问题</a>
+                        <div class="slideToggle">
+                            <a href="./NoviceGuide.html">新手指引</a>
+                            <a href="./HelpCenterNew.html">常见问题</a>
+                            <a href="./Complaint.html">投诉建议</a>
+                        </div>
+                    </li>
+                    <li><a class="switch" id="switch" href="javascript:;">登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="accPersCen-wrap">
+    	<div class="accPersCen clearfix">
+    		<div class="accPersCen-l">
+    			<ul class="ul_list">
+    				<li class="title"><a href="./myAccount.html">我的账户</a></li>
+    				<li class="title current"><a href="javascript:;">借款管理</a></li>
+    				<li class="color"><a href="./MyLoan.html">我的借款</a></li>
+    				<li><a href="javascript:;">认证提额</a></li>
+    				<li class="title"><a href="javascript:;">交易纪录</a></li>
+    				<li><a href="./ListOfIoans.html">借款</a></li>
+    				<li><a href="./Repayment.html">还款</a></li>
+    				<li class="title"><a href="./AccountSetting.html">账户设置</a></li>
+    				<li class="title"><a href="./HelpCenter.html">帮助中心</a></li>
+    			</ul>
+    		</div>
+
+    		<div class="accPersCen-r">
+    			<div class="borrow-wrap">
+                    <h3 class="tit3">借款额度</h3>
+                    <ul class="ul1 clearfix">
+                        <li>可用额度 <span class="txt">¥ 0.00</span></li>
+                        <li>总额度 <span class="txt">¥ 0.00</span></li>
+                    </ul>
+                    <div class="btn-wrap"><input type="button" class="btn" value="立即借款"></div>
+                </div>
+
+                <div class="borrow-wrap loan-list">
+                    <h3 class="tit3">借款列表</h3>
+					<ul class="table clearfix">
+						<li class="frist"><span>创建时间</span><span>金额(元)</span><span>期限(天)</span><span>状态</span><span>进度</span></li>
+						<li><span>2016-11-10</span><span>1000</span><span>31</span><span>进行中</span><span>身份认证</span></li>
+						<li><span>2016-11-10</span><span>1000</span><span>31</span><span>进行中</span><span>身份认证</span></li>
+						<li><span>2016-11-10</span><span>1000</span><span>31</span><span>进行中</span><span>身份认证</span></li>
+					</ul>
+                </div>
+
+    		</div>
+    	</div>
+    </div>
+
+
+	<!-- footer部分 -->
+
+	<div class="footer-wrap">
+        <div class="footer">
+            <div class="footTop clearfix">
+                <div class="footL clearfix">
+                    <dl>
+                        <dt>关于我们</dt>
+                        <dd><a href="javascript:;">公司介绍</a></dd>
+                        <dd><a href="javascript:;">加入我们</a></dd>
+                        <dd><a href="javascript:;">运营数据</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>常见问题</dt>
+                        <dd><a href="javascript:;">新手指引</a></dd>
+                        <dd><a href="javascript:;">常见问题</a></dd>
+                        <dd><a href="javascript:;">投诉建议</a></dd>
+                    </dl>
+                </div>
+                <div class="footR">
+                    <p class="txt2">65305518-转8027</p>
+                    <span class="txt3">(工作日) 9:00-17:30</span>
+                    <span class="email">chang@wemubank.com</span>
+                </div>
+                <div class="QRcode-ft">
+                    <img src="./images/footerQRcode.jpg" height="137" width="137" alt="">
+                    <span class="txt">微信扫一扫，领走1000元</span>
+                </div>
+            </div>
+            <div class="footB">
+                <div class="certificate" id="certificate">
+                    <ul class="ul4 clearfix">
+                        <li><a href="javascript:;"><img src="images/certificate1.png" height="38" width="112" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="images/certificate2.png" height="38" width="112" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="images/certificate3.png" height="38" width="112" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="images/certificate4.png" height="38" width="112" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <P class="txt">版权所有©2015百融骏金融超市网 All rights reserved | 备案号:京ICP备16008214号-1</P>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+     /*鼠标以上图片显示*/
+     certificate()
+    </script>
+    </body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta charset="utf-8">
+        <title>微木-绑定银行卡</title>
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/common.js"></script>
+        <script src="layer/layer.js"></script>
+        <script src="js/move.js"></script>
+        <script src="js/process.js"></script>
+    </head>
+    <body>
+    <!-- 回到顶部部分 -->
+    <div class="pageCheck-wrap">
+    	<ul class="pageCheck">
+    		<li class="back" id="scrollBack"></li>
+    	</ul>
+    </div>
+    <!-- 导航 -->
+    <div class="header-wrap bg_white"><input type="hidden" id="header-wrap">
+    	<div class="header clearfix">
+            <a href="./index.html"><h1 class="logo" title="微木"><!-- <img src="images/logo1.png" height="37" width="130" alt=""> --></h1></a>
+            <div class="nav">
+                <ul class="navList">
+                    <li><a href="./index.html">首页</a></li>
+                    <li class="current"><a href="./borrow.html">借款</a></li>
+                    <li><a href="./myAccount.html">个人中心</a></li>
+                    <li>
+                        <a href="./CompanyProfile.html">关于我们</a>
+                        <div class="slideToggle">
+                            <a href="./CompanyProfile.html">公司简介</a>
+                            <a href="./dataOperation.html">数据运营</a>
+                            <a href="./joinWeiMu.html">加入微木</a>
+                            <a href="./ContactUs.html">联系我们</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./HelpCenterNew.html">常见问题</a>
+                        <div class="slideToggle">
+                            <a href="./NoviceGuide.html">新手指引</a>
+                            <a href="./HelpCenterNew.html">常见问题</a>
+                            <a href="./Complaint.html">投诉建议</a>
+                        </div>
+                    </li>
+                    <li><a class="switch" id="switch" href="javascript:;">登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="PersonalMsg-wrap">
+    	<div class="PersonalMsg" >
+    		<h3 class="tit3">借款管理 > 认证提额 > 银行卡</h3>
+    		<div class="InformationFlow">
+    			<ul class="ul1 clearfix">
+    			   <li class="li1"><i></i></li>
+    			   <li class="li2"><i></i></li>
+                   <li class="li3"><i></i></li>
+    			   <li class="li4"><i></i></li>
+    			   <li style="width:0px;" class="li5 active"><i></i></li>
+    			</ul>
+    		</div>
+    		<div class="InformationForm bindBank">
+                <div class="form-wrap">
+                    <dl>
+                        <dt>持卡人：</dt>
+                        <dd><input type="text" class="text"></dd>
+                    </dl>
+                    <dl>
+                        <dt>银行名称：</dt>
+                        <dd>
+                            <label class="selLab-wrap" for="">
+                                <select name="" id="" class="sele">
+                                    <option value="中国建行">中国建行</option>
+                                    <option value="中国工商">中国工商</option>
+                                    <option value="招商银行">招商银行</option>
+                                </select>
+                            </label> 
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>银行卡号：</dt>
+                        <dd><input type="text" class="text"></dd>
+                    </dl>
+                    <dl>
+                        <dt>预留手机号：</dt>
+                        <dd><input type="text" class="text"></dd>
+                    </dl>
+                     <dl>
+                        <dt>短信验证：</dt>
+                        <dd><input type="text" class="text"> <span class="Telephone">发送发送发送</span></dd>
+                    </dl>
+                </div>
+    			<div class="btn-wrap"><input type="button" class="btn" id="Complete" value="完成认证"></div>
+    		</div>
+    	</div>
+    </div>
+    <!-- 弹框 -->
+    <div class="Bombbox-wrap" id="Bombbox-wrap">
+        <div class="Mask"></div>
+        <div class="Bombbox ConfirmMoney" id="ConfirmMoney">
+            <span class="close SpriteChart" id="close"></span>
+            <div style="display:block;" class="data-wrap">
+                <h3 class="tit3"><span class="txt">额度确认</span></h3>
+               <dl class="dl1"><dt>借款金额：</dt><dd>¥500.00</dd></dl>
+                <dl class="dl1"><dt>借款期限：</dt><dd>14天</dd></dl>
+                <dl class="dl1"><dt>还款金额：</dt><dd>¥550.00</dd></dl>
+                <dl class="dl1"><dt>本金：</dt><dd>¥500.00</dd></dl>
+                <dl class="dl1"><dt>利息: </dt><dd>¥2.50</dd></dl>
+                <dl class="dl1"><dt>数据使用费：</dt><dd>¥17.50</dd></dl> 
+                <dl class="dl1"><dt>账号管理及服务费：</dt><dd>¥30.00</dd></dl> 
+                <dl style="margin-bottom:10px;" class="dl1"><dt>还款日：</dt><dd>2016-12-06</dd></dl>
+                <input type="button" value="确认" class="btn">
+            </div>
+            <div style="display:none;" class="data-wrap">
+                <h3 class="tit3"><span class="txt">等待审核</span></h3>
+                <p class="txt2">您的借款申请已经提交<br>请耐心等待审核</p>
+                <input type="button" value="确认" class="btn">
+            </div>
+        </div>
+    </div>
+    <script>
+    confirmMoney()//显示弹框以及切换额度确认与等待审核
+    </script>
+
+
+	<!-- footer部分 -->
+	<div class="footer-wrap">
+        <div class="footer">
+            <div class="footTop clearfix">
+                <div class="footL clearfix">
+                    <dl>
+                        <dt>关于我们</dt>
+                        <dd><a href="javascript:;">公司介绍</a></dd>
+                        <dd><a href="javascript:;">加入我们</a></dd>
+                        <dd><a href="javascript:;">运营数据</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>常见问题</dt>
+                        <dd><a href="javascript:;">新手指引</a></dd>
+                        <dd><a href="javascript:;">常见问题</a></dd>
+                        <dd><a href="javascript:;">投诉建议</a></dd>
+                    </dl>
+                </div>
+                <div class="footR">
+                    <p class="txt2">65305518-转8027</p>
+                    <span class="txt3">(工作日) 9:00-17:30</span>
+                    <span class="email">chang@wemubank.com</span>
+                </div>
+                <div class="QRcode-ft">
+                    <img src="./images/footerQRcode.jpg" height="137" width="137" alt="">
+                    <span class="txt">微信扫一扫，领走1000元</span>
+                </div>
+            </div>
+            <div class="footB">
+                <div class="certificate" id="certificate">
+                    <ul class="ul4 clearfix">
+                        <li><a href="javascript:;"><img src="images/certificate1.png" height="38" width="112" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="images/certificate2.png" height="38" width="112" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="images/certificate3.png" height="38" width="112" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="images/certificate4.png" height="38" width="112" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <P class="txt">版权所有©2015百融骏金融超市网 All rights reserved | 备案号:京ICP备16008214号-1</P>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+     /*鼠标以上图片显示*/
+     certificate()
+    </script>
+    </body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <!-- <script src="js/jquery-1.7.2.min.js"></script> -->
+        <script src="js/common.js"></script>
+        <script src="layer/layer.js"></script>
+    </head>
+    <body>
+    <!-- 回到顶部部分 -->
+    <div class="pageCheck-wrap">
+    	<ul class="pageCheck">
+    		<li class="back" id="scrollBack"></li>
+    	</ul>
+    </div>
+    <!-- 导航 -->
+    <div class="header-wrap bg_white"><input type="hidden" id="header-wrap">
+    	<div class="header clearfix">
+            <a href="./index.html"><h1 class="logo" title="微木"><!-- <img src="images/logo1.png" height="37" width="130" alt=""> --></h1></a>
+            <div class="nav">
+                <ul class="navList">
+                    <li class="current"><a href="./index.html">首页</a></li>
+                    <li><a href="./borrow.html">借款</a></li>
+                    <li class="current"><a href="./myAccount.html">个人中心</a></li>
+                    <li>
+                        <a href="./CompanyProfile.html">关于我们</a>
+                        <div class="slideToggle">
+                            <a href="./CompanyProfile.html">公司简介</a>
+                            <a href="./dataOperation.html">数据运营</a>
+                            <a href="./joinWeiMu.html">加入微木</a>
+                            <a href="./ContactUs.html">联系我们</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./HelpCenterNew.html">常见问题</a>
+                        <div class="slideToggle">
+                            <a href="./NoviceGuide.html">新手指引</a>
+                            <a href="./HelpCenterNew.html">常见问题</a>
+                            <a href="./Complaint.html">投诉建议</a>
+                        </div>
+                    </li>
+                    <li><a class="switch" id="switch" href="javascript:;">登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="accPersCen-wrap">
+    	<div class="accPersCen clearfix">
+    		<div class="accPersCen-l">
+    			<ul class="ul_list">
+    				<li class="title current"><a href="./myAccount.html">我的账户</a></li>
+    				<li class="title"><a href="javascript:;">借款管理</a></li>
+    				<li class=""><a href="./MyLoan.html">我的借款</a></li>
+    				<li class=""><a href="./CertificationAlert.html">认证提额</a></li>
+    				<li class="title"><a href="javascript:;">交易纪录</a></li>
+    				<li><a href="./ListOfIoans.html">借款</a></li>
+    				<li><a href="./Repayment.html">还款</a></li>
+    				<li class="title"><a href="./AccountSetting.html">账户设置</a></li>
+    				<li class="title"><a href="./HelpCenter.html">帮助中心</a></li>
+    			</ul>
+    		</div>
+    		<div class="accPersCen-r">
+    			<div class="nickname">
+    				<h3 class="tit3">Hi&nbsp;&nbsp;&nbsp;金大川<span class="txt">152＊＊＊＊4667</span></h3>
+    				<ul class="ul1 clearfix">
+    					<li class="li1"><a title="已认证" href="javascript:;"></a></li>
+    					<li class="li2"><a title="未认证" href="javascript:;"></a></li>
+    					<li class="li3 active"><a title="未认证" href="javascript:;"></a></li>
+    					<li class="li4"><a title="未认证" href="javascript:;"></a></li>
+    				</ul>
+    				<p class="line"></p>
+    			</div>
+    			<div class="borrow-list">
+    				<h3 class="tit3">借款列表</h3>
+    				<dl class="dl1">
+    					<dt>借款列表：金大川的第1次借款</dt>
+    					<dd>金额：¥1,000.00     还款：¥3 / 天 × 14天</dd>
+    				</dl>
+    				<p class="line"></p>
+    			</div>
+    			<div class="Authentication">
+    				<ul class="ul2 clearfix">
+    					<li style="color:#30b9e9;" class="li1 active">个人信息</li>
+    					<li style="color:#fea03c;" class="li2">借款申请</li>
+    					<li style="color:#29e3be;" class="li3">资质证明</li>
+    					<li style="color:#fd5a5c;" class="li4">借款成功</li>
+    				</ul>
+    				<div class="list">
+    					<ul class="ul3">
+    						<li class="li1 active">
+    							<p class="txt"><sapn class="txt2">2016-11-10 14:00</sapn> 身份资料未认证。 建议您<a class="link" href="javascript:;">  补充资料</a></p>
+    						    <p class="txt"><sapn class="txt2">2016-11-10 14:00</sapn> 借款申请提交</p>
+    							<p class="txt"><sapn class="txt2">2016-11-10 14:00</sapn> 注册成功</p>
+    						</li>
+    						<li class="li2">
+    							<p class="txt"><sapn class="txt2">2016-11-10 14:00</sapn> 身份资料未认证。 建议您<a class="link" href="javascript:;">  补充资料</a></p>
+    							<p class="txt"><sapn class="txt2">2016-11-10 14:00</sapn> 借款申请提交</p>
+    							<p class="txt"><sapn class="txt2">2016-11-10 14:00</sapn> 注册成功</p>
+    						</li>
+    						<li class="li3">
+    							<p class="txt"><sapn class="txt2">2016-11-10 14:00</sapn> 身份资料未认证。 建议您<a class="link" href="javascript:;">  补充资料</a></p>
+    							<p class="txt"><sapn class="txt2">2016-11-10 14:00</sapn> 借款申请提交</p>
+    							<p class="txt"><sapn class="txt2">2016-11-10 14:00</sapn> 注册成功</p>
+    						</li>
+    						<li class="li4">
+    							<p class="txt"><sapn class="txt2">2016-11-10 14:00</sapn> 身份资料未认证。 建议您<a class="link" href="javascript:;">  补充资料</a></p>
+    							<p class="txt"><sapn class="txt2">2016-11-10 14:00</sapn> 借款申请提交</p>
+    							<p class="txt"><sapn class="txt2">2016-11-10 14:00</sapn> 注册成功</p>
+    						</li>
+    					</ul>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+
+	<!-- footer部分 -->
+
+	<div class="footer-wrap">
+        <div class="footer">
+            <div class="footTop clearfix">
+                <div class="footL clearfix">
+                    <dl>
+                        <dt>关于我们</dt>
+                        <dd><a href="javascript:;">公司介绍</a></dd>
+                        <dd><a href="javascript:;">加入我们</a></dd>
+                        <dd><a href="javascript:;">运营数据</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>常见问题</dt>
+                        <dd><a href="javascript:;">新手指引</a></dd>
+                        <dd><a href="javascript:;">常见问题</a></dd>
+                        <dd><a href="javascript:;">投诉建议</a></dd>
+                    </dl>
+                </div>
+                <div class="footR">
+                    <p class="txt2">65305518-转8027</p>
+                    <span class="txt3">(工作日) 9:00-17:30</span>
+                    <span class="email">chang@wemubank.com</span>
+                </div>
+                <div class="QRcode-ft">
+                    <img src="./images/footerQRcode.jpg" height="137" width="137" alt="">
+                    <span class="txt">微信扫一扫，领走1000元</span>
+                </div>
+            </div>
+            <div class="footB">
+                <div class="certificate" id="certificate">
+                    <ul class="ul4 clearfix">
+                        <li><a href="javascript:;"><img src="images/certificate1.png" height="38" width="112" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="images/certificate2.png" height="38" width="112" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="images/certificate3.png" height="38" width="112" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="images/certificate4.png" height="38" width="112" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <P class="txt">版权所有©2015百融骏金融超市网 All rights reserved | 备案号:京ICP备16008214号-1</P>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+     /*鼠标以上图片显示*/
+     certificate()
+    </script>
+    </body>
+</html>

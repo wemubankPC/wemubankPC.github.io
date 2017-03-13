@@ -1,0 +1,150 @@
+::-webkit-input-placeholder { color: #fff;}
+::-moz-placeholder { color: #fff;}
+:-ms-input-placeholder { color: #fff;}
+input:-moz-placeholder { color: #fff;}
+
+body,html{height: 100%;}
+.banner-wrap{width: 100%; height: 100%; background: url(../images/index_banker.jpg) center 0 no-repeat; -webkit-background-size: cover; -ms-background-size: cover; -moz-background-size: cover; background-size: cover; }
+.banner-wrap .banner{width: 1200px; margin:0 auto ;}
+/* 登陆注册部分 */
+.banner-wrap .banner-inner{ padding:200px 150px 0;}
+.banner-wrap .banner-inner .txt-wrap{float:left; }
+.banner-wrap .banner-inner .txt-wrap .txt{font-size: 30px; color: #fff; letter-spacing: 4px; }
+.banner-wrap .reg-login-logined{float: right; -overflow: hidden; position: relative; width: 266px; z-index: 1;}
+.banner-wrap .reg-login-logined .form-wrap{width: 266px; position: absolute; left: 0; top: 0; overflow: hidden;}
+.reg-login-logined .form-wrap .int-wrap .int{color: #333;}
+.int-wrap .placeholder{color: #fff;}
+.reg-login-logined .form-wrap .int-wrap{margin-bottom: 30px;}
+.banner-wrap .reg-login-logined .form-wrap .btn{width: 264px; height: 46px; color: #18daba; background: #fff; border: 1px solid #fff; border-radius: 20px; cursor: pointer; font-size: 16px;}
+.reg-login-logined .form-wrap .Agreement-wrap{color: #fff; font-size: 14px; padding:20px 0; cursor: pointer; }
+.reg-login-logined .form-wrap .Agreement-wrap a{color: #fff;}
+.reg-login-logined .form-wrap .Agreement-wrap .check{width: 18px; height: 18px; vertical-align: middle; margin-right: 11px; display: inline-block; position: relative; background-position: 0px -126px;  opacity: 0.5; filter: alpha(opacity=50);}
+.reg-login-logined .form-wrap .checked .check{ opacity: 1; filter: alpha(opacity=100);}
+.reg-login-logined .form-wrap .checked .check:after{ position: absolute; content: "";left: 0px; top: 0px; width: 18px ; height: 18px; background-position: 0px -126px;}
+.reg-login-logined .login-wrap .Agreement-wrap a{color: #fff;}
+/* 已登陆部分 */
+.reg-login-logined .logined-wrap{width: 270px; border: 1px solid #fff; background: rgba(255,255,255,0.5); padding:18px 20px 30px; border-radius: 6px; }
+.reg-login-logined .logined-wrap .tit2{font-size: 16px;color: #fff; text-align: center;}
+.reg-login-logined .logined-wrap .tit2 .txt1{color: #333;}
+.reg-login-logined .logined-wrap .head-pic{text-align: center; padding:20px 0;}
+.main-wrap{background: #fff;}
+.main-wrap .main{ width: 800px; margin: 0 auto; padding:95px 0; }
+.main-wrap .main .icon{width: 380px;}
+.main-wrap .main .t_r{text-align: right;}
+.main-wrap .main .icon,.main-wrap .main .txt{float: left; height: 237px;}
+.main-wrap .main .txt .pic{padding: 45px 0 60px;}
+.main-wrap .main .txt a{font-size: 16px; color: #f5c346;}
+.main-wrap .main .txt a:hover{text-decoration:underline!important;}
+.mobile-wtap{ background: #e8fbf7;}
+.balloon-wrap{background: #fff;}
+.balloon-wrap .balloon{width: 1050px; margin:0 auto; height: 506px; position: relative;}
+.balloon-wrap .balloon .tit2{position: absolute; left: 50%; top: 40px; margin-left: -50px;}
+.balloon-wrap .balloon .ul2 li{float: left; width: 25%; text-align: center;}
+.balloon-wrap .balloon .ul2 li .tit3{color: #333; font-size: 20px; padding-bottom: 10px;}
+.balloon-wrap .balloon .ul2 li .txt{color: #333;}
+.balloon-wrap .balloon .ul2 li .pic{display: inline-block; width: 123px; height: 123px; background-position: 0 0; position: relative; margin: 30px 0;}
+.balloon-wrap .balloon .ul2 li .pic:after{position: absolute; content: ""; left: 50%; top: 123px; height: 150px; border-right: 1px dashed #ccc; }
+.balloon-wrap .balloon .ul2 li.li1{padding-top: 200px;}
+.balloon-wrap .balloon .ul2 li.li1 .pic:after{height: 98px;}
+.balloon-wrap .balloon .ul2 li.li2{padding-top: 140px;}
+.balloon-wrap .balloon .ul2 li.li2 .pic{ background-position: -131px 0;}
+.balloon-wrap .balloon .ul2 li.li2 .pic:after{height: 156px;}
+.balloon-wrap .balloon .ul2 li.li3{padding-top: 130px; }
+.balloon-wrap .balloon .ul2 li.li3 .pic{ background-position: -261px 0;}
+.balloon-wrap .balloon .ul2 li.li3 .pic:after{height: 161px; top: -160px;}
+.balloon-wrap .balloon .ul2 li.li4{padding-top: 62px; }
+.balloon-wrap .balloon .ul2 li.li4 .pic{ background-position: -389px 0;}
+.balloon-wrap .balloon .ul2 li.li4 .pic:after{height: 93px; top: -92px;}
+.Credit-wrap{width: 100%; height:374px; background: url(../images/index_banker1.jpg) center 0 no-repeat; position: relative; }
+.Credit-wrap .Triangle{ position: absolute; left: 50%; top: 45px; margin-left: -200px;}
+.Credit-wrap .Triangle_txt{position: absolute; left: 50%; top: 106px; margin-left: -180px;}
+/* 最新贷款申请 */
+.LoanApplication-wrap{min-width: 1110px; background: #e8fbf7; padding-bottom: 40px;}
+.LoanApplication-wrap .LoanApplication{width: 1110px; margin:0 auto; position: relative;}
+.LoanApplication-wrap .LoanApplication .loan-list-wrap{ padding-top: 80px;}
+.LoanApplication-wrap .LoanApplication .tit3{position: absolute; left: 50%; top: 25px; margin-left: -59px;}
+.LoanApplication-wrap .LoanApplication .loan-list{border:1px solid #94e0c1; border-radius: 10px; height: 248px; -padding:5px 0px; overflow: hidden;}
+.LoanApplication-wrap .LoanApplication .loan-list .ul3{ background: #fff;}
+.LoanApplication-wrap .LoanApplication .loan-list .ul3 li span{width: 25%; display: inline-block; text-align: center; color: #333; font-size: 16px; padding:10px 0;}
+.LoanApplication-wrap .LoanApplication .loan-list .ul3 li:nth-child(2n+1){background: #e8fbf7; border-radius: 10px 10px 0 0;}
+/* .LoanApplication-wrap .LoanApplication .loan-list .ul3 li:first-child{background: #fff;} */
+/* 二维码 */
+.QRcode-wrap{min-width: 1110px; height: 478px; background: url(../images/QRcode_bg.jpg) center 0 no-repeat; position: relative;}
+.QRcode-wrap .QRcode{position: absolute; left: 50%; margin-left: -125px; top: 34px;}
+.QRcode-wrap .txt_QRcode{position: absolute; left: 50%; margin-left: -300px; bottom: 48px;}
+
+/* banner拖拽部分 */
+.Drag-wrap{min-width: 1100px; position: relative; background: url(../images/index_banner_bg.jpg) center 0 no-repeat; overflow: hidden;}
+.FamousQuotes{ background: #f7f8f8; }
+.Drag-wrap .ul3{ position: relative; left: 0; top: 0;}
+.Drag-wrap .ul3 li{ float: left; height: 390px;}
+.Drag-wrap .ul3 li .main{position: relative; left: 0;}
+.Drag-wrap .ul3 li .pic{ width: 118px; height: 118px; margin:40px auto 0; text-align: center;}
+.Drag-wrap .ul3 li .pic1{background-position: -701px -226px;}
+.Drag-wrap .ul3 li .pic2{background-position: -701px -346px;}
+.Drag-wrap .ul3 li .pic3{background-position: -701px -466px;}
+.Drag-wrap .ul3 li .pic4{background-position: -701px -586px;}
+.Drag-wrap .ul3 li .pic span{display:inline-block; margin-top: 140px; color: #fff; font-size: 16px; text-align: center;}
+.Drag-wrap .ul3 li .txt{ width: 790px; margin:0 auto; padding-top: 65px;color: #fff; font-size: 15px; line-height:30px;}
+.Drag-wrap .ol3{ position: absolute; bottom: 50px; width: 100%; text-align: center; }
+.Drag-wrap .ol3 li{ width: 14px; height: 14px; border-radius: 50%; background: #fff; display:inline-block; margin:0 5px; cursor: pointer;}
+.Drag-wrap .ol3 li.active{background: #1fccdc; }
+/* 借款部分 */
+.borrow_banner{min-width: 1110px; height: 699px; background: url(../images/borrow_bg.jpg) center top no-repeat;}
+.borrow_banner .borrow{width: 1110px; margin:0 auto; padding-top: 110px; }
+.borrow_banner .borrow .common{width: 300px; height: 300px; float: left; margin-top: 86px;text-align: center;}
+.borrow_banner .borrow .common .txt{color: #333333; font-size: 22px; padding:80px 0 40px 0;}
+.borrow_banner .borrow .common .txt2{color: #48cfce; font-size: 56px; }
+.borrow_banner .borrow .common .txt2 em{font-size: 20px;}
+.borrow_banner .borrow .application{width: 470px; height: 470px; float: left; margin:0 18px; position: relative;}
+.borrow_banner .borrow .application .data-wrap,.borrow_banner .borrow .application .data-wrap1{width: 472px; height: 472px;  padding:70px 105px 0; border-radius: 50%; position: absolute; left: 0; top: 0; -webkit-backface-visibility:hidden; -ms-backface-visibility:hidden; -moz-backface-visibility:hidden; backface-visibility:hidden; transition: all .3s ease-in-out; z-index: 1; background: url(../images/circular-bg.png) 0 0 no-repeat;}
+
+.borrow_banner .borrow .application .data-wrap1,.borrow_banner .borrow .application.back .data-wrap2{-webkit-transform: rotateY(0); -ms-transform: rotateY(0); -moz-transform: rotateY(0); transform: rotateY(0);  z-index: 2;}
+.borrow_banner .borrow .application .data-wrap2,.borrow_banner .borrow .application.back .data-wrap1{-webkit-transform: rotateY(180deg); -ms-transform: rotateY(180deg); -moz-transform: rotateY(180deg); transform: rotateY(180deg); z-index:1;}
+/*.borrow_banner .borrow .application .data-wrap .Arrow{width: 19px; height: 35px; position: absolute; left: 26px; top: 50%; margin-top: -20px; background-position: -442px -125px; }*/
+.borrow_banner .borrow .application .dl1{height: 38px; }
+.borrow_banner .borrow .application .dl1 dt{ -width: 185px; -display: inline-block; color: #252e32; font-size: 20px; padding-bottom: 25px;}
+.borrow_banner .borrow .application .dl1 dd{ -display: inline-block; color: #333; font-size: 20px; text-align: center;}
+.borrow_banner .borrow .application .data-wrap1{}
+.borrow_banner .borrow .application .data-wrap1 .dl1{height:auto; padding-bottom:25px; text-align: center;}
+.borrow_banner .borrow .application .data-wrap1 .dl1 dd span{width: 100px; height: 48px; display: inline-block; line-height: 48px; text-align: center; color: #034836; font-size: 24px; cursor: pointer; border-radius: 4px; border: 1px solid #0bad84; -background: #a1e9b5; margin: 0 14px;}
+.borrow_banner .borrow .application .data-wrap1 .dl1 dd span.active{background: #a1e9b5;}
+.borrow_banner .borrow .application .data-wrap1 .btn{width: 210px; display:block; margin:30px auto 0;}
+.borrow_banner .borrow .application .data-wrap2{padding:30px 80px 0; }
+.borrow_banner .borrow .application .data-wrap2 .tit3{text-align: center; font-size: 16px; color: #333; }
+.borrow_banner .borrow .application .data-wrap2 .txt{font-size:30px; color: #45d1a1; text-align: center; padding:10px 0; }
+.borrow_banner .borrow .application .data-wrap2 .dl1{font-size: 14px; height:auto; padding:5px 0 5px;}
+.borrow_banner .borrow .application .data-wrap2 .dl1 dt{display: inline-block; width: 150px; font-size: 16px; text-align: right; padding: 0;}
+.borrow_banner .borrow .application .data-wrap2 .dl1 dd{display: inline-block; font-size: 16px; margin-left: 50px; color: #45d1a1;}
+.borrow_banner .application .ol{ position: absolute; width: 100%; bottom: 20px;  text-align: center; z-index: 3;}
+.borrow_banner .application .ol li{width: 15px; height: 15px; background: #87e8d8; border-radius: 50%; display: inline-block; cursor: pointer;}
+.borrow_banner .application .ol li.active{ background: #0fd1b1;}
+
+.FamousQuotes .ul3 li{height: 350px;}
+.FamousQuotes .ul3 li .pic span{margin-top:24px; color: #333; font-size: 20px; width: 140px; margin-left:-14px;}
+.FamousQuotes .ul3 li .pic img{width: 100%;}
+.FamousQuotes .ul3 li .txt{color: #666; text-align: center; font-size: 16px;}
+.FamousQuotes .ol3 li{width: 36px; height: 2px; background: #dddcdc; margin:0 5px;}
+.FamousQuotes .ol3 li.active{background: #b0b0b0;}
+/* 申请 */
+.balloon2-wrap{min-width: 1110px; background: #ffffff;}
+.balloon2-wrap .balloon2{width: 1110px; margin:0 auto; padding:32px 0 90px; }
+.balloon2-wrap .balloon2 .tit2{ width: 100px; margin:0 auto; padding-bottom: 66px; }
+.balloon2-wrap .balloon2 .ul2{width: 994px; margin:0 auto;}
+.balloon2-wrap .balloon2 .ul2 li{float: left; padding-top: 156px; position: relative; margin-right: 140px; text-align: center;}
+.balloon2-wrap .balloon2 .ul2 li .tit3{ font-size: 20px; color: #333; padding-bottom: 15px;}
+.balloon2-wrap .balloon2 .ul2 li:after{content: ""; width: 124px; height: 124px; position: absolute; left: 50%; margin-left: -62px; top: 0;}
+.balloon2-wrap .balloon2 .ul2 li:before{content: ""; width: 23px; height: 46px; position: absolute; left:200px;top: 60px; background-position: -77px -125px;}
+.balloon2-wrap .balloon2 .ul2 li.li4:before{background-position: 10px 20px;}
+.balloon2-wrap .balloon2 .ul2 li.li1:after{ background-position: 0 0;}
+.balloon2-wrap .balloon2 .ul2 li.li2:after{ background-position: -131px 0;}
+.balloon2-wrap .balloon2 .ul2 li.li3:after{ background-position: -260px 0;}
+.balloon2-wrap .balloon2 .ul2 li.li4:after{ background-position: -388px 0;}
+
+/* 小广告 */
+.Advertisement-fixed{position: fixed; -left:-100%; bottom: 0; width: 100%; height: 170px; z-index: 4; -overflow: hidden;}
+.Advertisement-wrap{position: absolute; left: 0; bottom: 0; width: 100%; text-align: center;}
+.Advertisement-mask{ width: 100%; height: 170px; position: absolute; left: 0; top: 0; background: #000; opacity: 0.85; filter: alpha(opacity=85);  }
+.Advertisement{width: 602px; height: 162px; display:inline-block; position: relative; padding-top: 8px;}
+.Advertisement .close{width: 26px; height: 26px; position: absolute; right: -84px; top: 20px; background-position: -148px -169px;}
+.Advertisement-fixed .open{position: absolute; right: -189px; top: 20px; }

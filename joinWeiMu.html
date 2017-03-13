@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <!-- <script src="js/jquery-1.7.2.min.js"></script> -->
+        <script src="js/common.js"></script>
+        <script src="layer/layer.js"></script>
+        <script src="js/move.js"></script>
+       <!--  <script src="js/HelpCenter.js"></script> -->
+    </head>
+    <body>
+    <!-- 回到顶部部分 -->
+    <div class="pageCheck-wrap">
+    	<ul class="pageCheck">
+    		<li class="back" id="scrollBack"></li>
+    	</ul>
+    </div>
+    <!-- 导航 -->
+    <div class="header-wrap bg_white"><input type="hidden" id="header-wrap">
+    	<div class="header clearfix">
+        <a href="./index.html"><h1 class="logo" title="微木"><!-- <img src="images/logo1.png" height="37" width="130" alt=""> --></h1></a>
+        <div class="nav">
+          <ul class="navList">
+            <li><a href="./index.html">首页</a></li>
+            <li><a href="./borrow.html">借款</a></li>
+            <li><a href="./myAccount.html">个人中心</a></li>
+            <li  class="current">
+              <a href="./CompanyProfile.html">关于我们</a>
+              <div class="slideToggle">
+                <a href="./CompanyProfile.html">公司简介</a>
+                <a href="./dataOperation.html">数据运营</a>
+                <a href="./joinWeiMu.html">加入微木</a>
+                <a href="./ContactUs.html">联系我们</a>
+              </div>
+            </li>
+            <li>
+              <a href="./HelpCenterNew.html">常见问题</a>
+              <div class="slideToggle">
+                <a href="./NoviceGuide.html">新手指引</a>
+                <a href="./HelpCenterNew.html">常见问题</a>
+                <a href="./Complaint.html">投诉建议</a>
+              </div>
+            </li>
+            <li><a class="switch" id="switch" href="javascript:;">登录</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+   <div class="NoviceGuide-wrap joinWeiMu-wrap">
+       <div class="joinWeiMu">
+       	  <h3 class="tit3">加入微木</h3>
+       	  <div class="content_txt">
+       	  	<h4 class="tit4">招聘岗位：产品经理</h4>
+       	  	<p class="txt">1. 收集在2015年年9月之后新发布并流行行起来的APP,简单评价产品特色与用户价值。</p>
+       	  	<p class="txt">2. 简单介绍你喜欢的各种小众APP(不不含游戏)。</p>
+       	  	<p class="txt">3. 针对你之前做过的几款产品,回答以下的三个问题:</p>
+       	  	<ul class="ul1">
+       	  		<li>用一句话描述这款产品是做什么的?</li>
+       	  		<li>这款产品的⽤用户分为几个类型?</li>
+       	  		<li>最重要的用户类型是?产品为他们做了什么?</li>
+       	  	</ul>
+       	  	<p class="txt">4. 如果有三款Android手机供你选择,是哪三款?</p>
+       	  	<p class="txt">5. 每周至少打开一次的应用有哪几个?</p>
+       	  	<p class="txt">6. 单论产品设计,包括UI/交互/独特的功能,不牵涉产品定位与运营,你最欣赏的几款产品是?</p>
+       	  	<p class="txt">7. 在UI方面你最喜欢的几款产品是?</p>
+       	  	<p class="txt">8. 获取信息主要的渠道是?</p>
+       	  	<p class="txt">9. 你最常用的音乐应用?阅读应用?美颜应用?修图应用?视频应用?社区应用?</p>
+       	  	<p class="txt">10. 介绍最近一年年,你在产品工作中跟其他人发生的几次分歧与争执。</p>
+       	  </div>
+       	  <p class="txt2">感兴趣的小伙伴写好答案加上自己个人简历直接投递至 CEO 邮箱: <br> chang@wemubank.com</p>
+       </div>
+   </div>
+
+
+	<!-- footer部分 -->
+
+	<div class="footer-wrap">
+        <div class="footer">
+            <div class="footTop clearfix">
+                <div class="footL clearfix">
+                    <dl>
+                        <dt>关于我们</dt>
+                        <dd><a href="javascript:;">公司介绍</a></dd>
+                        <dd><a href="javascript:;">加入我们</a></dd>
+                        <dd><a href="javascript:;">运营数据</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>常见问题</dt>
+                        <dd><a href="javascript:;">新手指引</a></dd>
+                        <dd><a href="javascript:;">常见问题</a></dd>
+                        <dd><a href="javascript:;">投诉建议</a></dd>
+                    </dl>
+                </div>
+                <div class="footR">
+                    <p class="txt2">65305518-转8027</p>
+                    <span class="txt3">(工作日) 9:00-17:30</span>
+                    <span class="email">chang@wemubank.com</span>
+                </div>
+                <div class="QRcode-ft">
+                    <img src="./images/footerQRcode.jpg" height="137" width="137" alt="">
+                    <span class="txt">微信扫一扫，领走1000元</span>
+                </div>
+            </div>
+            <div class="footB">
+                <div class="certificate" id="certificate">
+                    <ul class="ul4 clearfix">
+                        <li><a href="javascript:;"><img src="images/certificate1.png" height="38" width="112" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="images/certificate2.png" height="38" width="112" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="images/certificate3.png" height="38" width="112" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="images/certificate4.png" height="38" width="112" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <P class="txt">版权所有©2015百融骏金融超市网 All rights reserved | 备案号:京ICP备16008214号-1</P>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+     /*鼠标以上图片显示*/
+     certificate()
+    </script>
+    </body>
+</html>

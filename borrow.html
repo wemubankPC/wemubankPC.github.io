@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>微木-借款</title>
+        <link rel="shortcut icon" href="images/icons.ico">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/jquery-1.11.2.min.js"></script>
+		    <script src="js/move.js"></script>
+        <script src="js/common.js"></script>
+        <script src="layer/layer.js"></script>
+        <script src="js/borrow.js"></script>
+    </head>
+	<style>
+    .header-wrap .nav li.current a{ color:#fff; }
+	.header-wrap .nav li a.switch{color:#fff; border-color:#fff;}
+	.bg_white .nav .navList li a{color: #18daba; }
+	.header-wrap li:hover a{color: #fff;}
+    </style>
+    <body>
+    <!-- 回到顶部部分 -->
+    <div class="pageCheck-wrap">
+    	<ul class="pageCheck">
+    		<li class="back" id="scrollBack"></li>
+    	</ul>
+    </div>
+    <!-- 导航 -->
+    <div class="header-wrap" id="header-wrap">
+    	<div class="header clearfix">
+    		<a href="./index.html"><h1 class="logo" title="微木"><!-- <img src="images/logo1.png" height="37" width="130" alt=""> --></h1></a>
+    		<div class="nav">
+	    		<ul class="navList">
+	    			<li><a href="./index.html">首页</a></li>
+	    			<li class="current"><a href="./borrow.html">借款</a></li>
+	    			<li><a href="./myAccount.html">个人中心</a></li>
+	    			<li>
+	    				<a href="./CompanyProfile.html">关于我们</a>
+	    				<div class="slideToggle">
+	    					<a href="./CompanyProfile.html">公司简介</a>
+	    					<a href="./dataOperation.html">数据运营</a>
+	    					<a href="./joinWeiMu.html">加入微木</a>
+	    					<a href="./ContactUs.html">联系我们</a>
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<a href="./HelpCenterNew.html">常见问题</a>
+	    				<div class="slideToggle">
+	    					<a href="./NoviceGuide.html">新手指引</a>
+	    					<a href="./HelpCenterNew.html">常见问题</a>
+	    					<a href="./Complaint.html">投诉建议</a>
+	    				</div>
+	    			</li>
+	    			<li><a class="switch" id="switch" href="javascript:;">登录</a></li>
+	    		</ul>
+    		</div>
+    	</div>
+    </div>
+    <!-- banner -->
+    <div class="borrow_banner" >
+    	<!-- <img src="images/borrow_bg.jpg" height="699" width="1920" alt=""> -->
+		<div class="borrow clearfix">
+			<div class="common loanNumber">
+				<p class="txt">近一月借贷人数</p>
+				<span class="txt2">3094<em> 人</em></span>
+			</div>
+			<div class="application" id="application">
+				<div style="display: block;" class="data-wrap data-wrap1">
+					<dl class="dl1"><dt>借款金额(元)</dt><dd id="money"><span class="active">500</span><span>1000</span></dd></dl>
+					<dl class="dl1"><dt>借款期限(天)</dt><dd><span class="active">14</span></dd></dl>
+					<input type="button" value="立即申请" class="btn">
+				</div>
+				<div style="" class="data-wrap data-wrap2">
+					<h3 class="tit3">还款金额</h3>
+					<p class="txt">500</p>
+					<a class="Arrow" href="javascript:;"></a>
+					<dl class="dl1"><dt>借款金额：</dt><dd>¥500.00</dd></dl>
+					<dl class="dl1"><dt>借款期限：</dt><dd>14天</dd></dl>
+					<dl class="dl1"><dt>还款金额：</dt><dd>¥550.00</dd></dl>
+					<dl class="dl1"><dt>本金：</dt><dd>¥500.00</dd></dl>
+					<dl class="dl1"><dt>利息: </dt><dd>¥2.50</dd></dl>
+					<dl class="dl1"><dt>数据使用费：</dt><dd>¥17.50</dd></dl>
+					<dl class="dl1"><dt>账号管理及服务费：</dt><dd>¥30.00</dd></dl>
+					<dl style="margin-bottom:10px;" class="dl1"><dt>还款日：</dt><dd>2016-12-06</dd></dl>
+					<a style="display:block; text-align:center;" href="javascript:;"><input style="width:170px;" type="button" value="立即申请" class="btn"></a>
+				</div>
+				<ol class="ol">
+					<li class="active"></li>
+					<li></li>
+				</ol>
+			</div>
+			<div class="common TotalAmount">
+				<p class="txt">近一月成交金额</p>
+				<span class="txt2">2888.8<em> 元</em></span>
+			</div>
+		</div>
+    </div>
+
+   <div class="balloon2-wrap">
+   		<div class="balloon2">
+   			<h2 class="tit2"><img src="images/5_txt.png" alt=""></h2>
+   			<ul class="ul2 clearfix">
+   				<li class="li1">
+   					<h3 class="tit3">提交申请</h3>
+   					<p class="txt">在线注册并提交申请</p>
+   					<div class="pic"></div>
+   				</li>
+   				<li class="li2">
+   					<h3 class="tit3">等待审核</h3>
+   					<p class="txt">我们需要审核您的资料</p>
+   					<div class="pic"></div>
+   				</li>
+   				<li class="li3">
+   					<div class="pic"></div>
+   					<h3 class="tit3">电话回访</h3>
+   					<p class="txt">部分用户需要此操作</p>
+   				</li>
+   				<li style="margin-right:0;" class="li4">
+   					<div class="pic"></div>
+   					<h3 class="tit3">放款成功</h3>
+   					<p class="txt">审核通过后<br>最快 30 分钟您可以拿到借款</p>
+   				</li>
+   			</ul>
+   		</div>
+   </div>
+
+	<div class="LoanApplication-wrap">
+		<div class="LoanApplication">
+			<h3 class="tit3"><img src="images/7_txt.png" height="27" width="157" alt=""></h3>
+			<div class="loan-list-wrap">
+				<div class="loan-list">
+					<ul class="ul3">
+						<li style="background:#fff;"><span>姓名</span><span>电话号码</span><span>贷款金额</span><span>申请时间</span></li>
+						<div id="scrollDiv">
+							<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+							<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+							<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+							<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+							<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+							<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+							<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+							<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+							<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+							<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+							<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+							<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+							<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+							<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+							<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+							<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+							<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+							<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+							<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+							<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+							<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+							<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+							<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+							<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+							<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+						</div>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="Drag-wrap FamousQuotes" id="Drag-wrap">
+		<ul class="ul3 clearfix">
+			<li>
+				<div class="main">
+					<h3 class="pic pic1">
+            <img src="./images/FamousQquotes1.png" alt="">
+            <span>富兰克林</span>
+          </h3>
+					<p class="txt">诚实和勤勉，应该成为你永恒的伴侣。</p>
+				</div>
+			</li>
+			<li>
+				<div class="main">
+					<h3 class="pic pic2">
+              <img src="./images/FamousQquotes2.png" alt="">
+              <span>陀思妥耶夫斯基</span>
+          </h3>
+					<p class="txt">要正直地生活，别想入非非！要诚实地工作，才能前程远大。</p>
+				</div>
+			</li>
+			<li>
+        <div class="main">
+					<h3 class="pic pic1">
+            <img src="./images/FamousQquotes3.png" alt="">
+            <span>莫里哀</span>
+          </h3>
+					<p class="txt">一个人严守诺言，比守卫他的财富更重要。</p>
+				</div>
+			</li>
+		</ul>
+
+		<ol class="ol3 clearfix">
+			<!-- <li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li> -->
+		</ol>
+	</div>
+	<script>
+		/*banner轮播*/
+		bannerLunBo();
+	</script>
+
+
+	<!-- footer部分 -->
+	<div class="footer-wrap">
+        <div class="footer">
+            <div class="footTop clearfix">
+                <div class="footL clearfix">
+                    <dl>
+                        <dt>关于我们</dt>
+                        <dd><a href="javascript:;">公司介绍</a></dd>
+                        <dd><a href="javascript:;">加入我们</a></dd>
+                        <dd><a href="javascript:;">运营数据</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>常见问题</dt>
+                        <dd><a href="javascript:;">新手指引</a></dd>
+                        <dd><a href="javascript:;">常见问题</a></dd>
+                        <dd><a href="javascript:;">投诉建议</a></dd>
+                    </dl>
+                </div>
+                <div class="footR">
+                    <p class="txt2">65305518-转8027</p>
+                    <span class="txt3">(工作日) 9:00-17:30</span>
+                    <span class="email">chang@wemubank.com</span>
+                </div>
+                <div class="QRcode-ft">
+                    <img src="./images/footerQRcode.jpg" height="137" width="137" alt="">
+                    <span class="txt">微信扫一扫，领走1000元</span>
+                </div>
+            </div>
+            <div class="footB">
+                <div class="certificate" id="certificate">
+                    <ul class="ul4 clearfix">
+                        <li><a href="javascript:;"><img src="images/certificate1.png" height="38" width="112" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="images/certificate2.png" height="38" width="112" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="images/certificate3.png" height="38" width="112" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="images/certificate4.png" height="38" width="112" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <P class="txt">版权所有©2015百融骏金融超市网 All rights reserved | 备案号:京ICP备16008214号-1</P>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+     /*鼠标以上图片显示*/
+     certificate()
+    </script>
+    </body>
+</html>

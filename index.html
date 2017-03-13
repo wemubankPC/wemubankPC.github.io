@@ -1,1 +1,398 @@
-hello word!
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>微木-首页</title>
+        <link rel="shortcut icon" href="images/icons.ico">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/index.css">
+        <!-- <script src="js/jquery-1.11.2.min.js"></script> -->
+        <script src="js/jquery-1.7.2.min.js"></script>
+        <script src="js/common.js"></script>
+        <script src="layer/layer.js"></script>
+        <script src="js/move.js"></script>
+        <!-- <script src="js/startMove.js"></script> -->
+        <script src="js/index.js"></script>
+        <script src="js/reg_login.js"></script>
+    </head>
+    <body>
+    <!-- 回到顶部部分 -->
+    <div class="pageCheck-wrap">
+    	<ul class="pageCheck">
+    		<li class="back" id="scrollBack"></li>
+    	</ul>
+    </div>
+    <!-- 导航 -->
+    <div class="header-wrap" id="header-wrap">
+    	<div class="header clearfix">
+    		<a href="./index.html"><h1 class="logo" title="微木"><!-- <img src="images/logo1.png" height="37" width="130" alt=""> --></h1></a>
+    		<div class="nav">
+	    		<ul class="navList">
+	    			<li class="current"><a href="./index.html">首页</a></li>
+	    			<li><a href="./borrow.html">借款</a></li>
+	    			<li><a href="./myAccount.html">个人中心</a></li>
+	    			<li>
+	    				<a href="./CompanyProfile.html">关于我们</a>
+	    				<div class="slideToggle">
+	    					<a href="./CompanyProfile.html">公司简介</a>
+	    					<a href="./dataOperation.html">数据运营</a>
+	    					<a href="./joinWeiMu.html">加入微木</a>
+	    					<a href="./ContactUs.html">联系我们</a>
+	    				</div>
+	    			</li>
+	    			<li>
+	    				<a href="./HelpCenterNew.html">常见问题</a>
+	    				<div class="slideToggle">
+	    					<a href="./NoviceGuide.html">新手指引</a>
+	    					<a href="./HelpCenterNew.html">常见问题</a>
+	    					<a href="./Complaint.html">投诉建议</a>
+	    				</div>
+	    			</li>
+	    			<li><a class="switch" id="switch" href="javascript:;">登录</a></li>
+	    		</ul>
+    		</div>
+    	</div>
+    </div>
+
+    <!-- banner -->
+    <div class="banner-wrap" id="banner-wrap">
+    	<!-- <img src="images/index_banker.jpg" height="629" width="1920" alt=""> -->
+    	<div class="banner">
+    		<div class="banner-inner clearfix">
+    			<div class="txt-wrap wow slideInLeft animated">
+	    			<!-- <p class="txt">1分钟申请<br>10分钟审核<br>最快30分钟资金到账</p> -->
+	    			<img src="images/banner_txt.png" height="212" width="495" alt="">
+	    		</div>
+	    		<div class="reg-login-logined wow bounceInDown animated" data-wow-delay="0.5s">
+	    			<div style="display:block;" class="form-wrap reg-wrap" id="reg-wrap">
+	    				<label class="int-wrap placeholder-wrap" for="">
+  							<input type="text" id="mobile" autocomplete="off" class="int" maxlength="11" placeholder="手机号">
+  							<p class="placeholder" style="display: none;">手机号</p>
+  						</label>
+  						<label class="int-wrap placeholder-wrap" for="">
+  							<input type="text" id="mobileCode" autocomplete="off" class="int" maxlength="11" placeholder="验证码">
+  							<p class="placeholder" style="display: none;">验证码</p>
+  							<span id="VerificationCode">发送验证码</span>
+  						</label>
+  						<label class="int-wrap placeholder-wrap" style="margin-bottom:0;" for="">
+  							<input type="password" id="regpassword" autocomplete="off" class="int" maxlength="11" placeholder="密码(6-20位字母加数字)">
+  							<p class="placeholder" style="display: none;">密码(6-20位字母加数字)</p>
+  						</label>
+  						<p class="Agreement-wrap"><albel class="Agreement checked" ><span class="check"></span>我已同意</albel><a href="javascript:;">《微木金融相关条款》</a></p>
+  						<input type="button" class="btn" value="注册">
+	    			</div>
+
+    				<div style="display:block;" class="form-wrap login-wrap" id="login-wrap">
+	    				<label class="int-wrap placeholder-wrap" for="">
+  							<input type="text" id="mobile" autocomplete="off" class="int" maxlength="11" placeholder="手机号">
+  							<p class="placeholder" style="display: none;">手机号</p>
+  						</label>
+  						<label class="int-wrap placeholder-wrap" style="margin-bottom:0;" for="">
+  							<input type="password" id="regpassword" autocomplete="off" class="int" maxlength="11" placeholder="密码(6-20位字母加数字)">
+  							<p class="placeholder" style="display: none;">密码(6-20位字母加数字)</p>
+  						</label>
+  						<p class="Agreement-wrap clearfix"><a href="javascript:;">验证登陆</a><a style="float:right;" href="javascript:;">注册</a></p>
+  						<input type="button" class="btn" value="登录">
+	    			</div>
+            <script type="text/javascript">
+                  switchLoginReg();
+            </script>
+	    			<div style="display:none;" class="form-wrap logined-wrap">
+	    				<h2 class="tit2"><span class="txt1">hi 金大川</span>&nbsp;&nbsp;欢迎来到微木金融</h2>
+	    				<div class="head-pic"><img src="images/head-pic.png" alt=""></div>
+	    				<input type="button" class="btn" value="去借贷">
+	    			</div>
+	    		</div>
+    		</div>
+    	</div>
+    </div>
+
+    <div class="main-wrap wallet-wtap">
+    	<div class="main wallet clearfix">
+    		<div class="icon wow rollIn animated"><img src="images/Bank_card.png" alt=""></div>
+    		<div class="txt wow lightSpeedIn animated" data-wow-delay="0.5s">
+    			<div class="pic"><img src="images/1_txt.png" alt=""></div>
+    			<a href="javascript:;">查看更多</a>
+    		</div>
+    	</div>
+    </div>
+
+    <div class="main-wrap mobile-wtap">
+    	<div class="main wallet clearfix">
+    		<div class="txt wow slideInLeft animated">
+    			<div class="pic"><img src="images/2_txt.png" alt=""></div>
+    			<a href="javascript:;">查看更多</a>
+    		</div>
+    		<div class="icon t_r wow lightSpeedIn bg-yellow animated" data-wow-delay="0.5s"><img src="images/Mobile.png" alt=""></div>
+    	</div>
+    </div>
+
+    <div class="main-wrap wallet-wtap">
+    	<div class="main wallet clearfix">
+    		<div class="icon wow rollIn animated"><img src="images/data.png" alt=""></div>
+    		<div class="txt wow lightSpeedIn animated" data-wow-delay="0.5s">
+    			<div class="pic"><img src="images/3_txt.png" alt=""></div>
+    			<a href="javascript:;">查看更多</a>
+    		</div>
+    	</div>
+    </div>
+
+    <div class="main-wrap mobile-wtap">
+    	<div class="main wallet clearfix">
+    		<div class="txt  wow slideInLeft animated">
+    			<div class="pic"><img src="images/4_txt.png" alt=""></div>
+    			<a href="javascript:;">查看更多</a>
+    		</div>
+    		<div style="width:326px" class="icon t_r wow lightSpeedIn bg-yellow animated" data-wow-delay="0.5s"><img src="images/Mobile2.png" alt=""></div>
+    	</div>
+    </div>
+
+   <div class="balloon-wrap">
+   		<div class="balloon">
+   			<h2 class="tit2"><img src="images/5_txt.png" alt=""></h2>
+   			<ul class="ul2 clearfix">
+   				<li class="li1 wow bounceInUp animated">
+   					<h3 class="tit3">提交申请</h3>
+   					<p class="txt">在线注册并提交申请</p>
+   					<div class="pic"></div>
+   				</li>
+   				<li class="li2 wow bounceInUp animated" data-wow-delay="0.4s">
+   					<h3 class="tit3">等待审核</h3>
+   					<p class="txt">我们需要审核您的资料</p>
+   					<div class="pic"></div>
+   				</li>
+   				<li class="li3 wow bounceInDown animated" data-wow-delay="0.7s">
+   					<div class="pic"></div>
+   					<h3 class="tit3">电话回访</h3>
+   					<p class="txt">部分用户需要此操作</p>
+   				</li>
+   				<li class="li4 wow bounceInDown animated" data-wow-delay="1s">
+   					<div class="pic"></div>
+   					<h3 class="tit3">放款成功</h3>
+   					<p class="txt">审核通过后<br>最快 30 分钟您可以拿到借款</p>
+   				</li>
+   			</ul>
+   		</div>
+   </div>
+
+   <div class="Credit-wrap">
+   	 <div class="Triangle wow shake animated" data-wow-iteration="5" data-wow-duration="0.15s" data-wow-delay="0.5s"><img src="images/line_three.png" height="287" width="400" alt=""></div>
+   	 <div class="Triangle_txt wow pulse animated" data-wow-iteration="5" data-wow-duration="0.15s"><img src="images/8_txt.png" height="106" width="360" alt=""></div>
+   </div>
+
+	<div class="LoanApplication-wrap">
+	 	<div class="LoanApplication">
+	 		<h3 class="tit3"><img src="images/7_txt.png" height="27" width="157" alt=""></h3>
+	 		<div class="loan-list-wrap">
+	 			<div class="loan-list">
+	 				<ul class="ul3">
+	 					<li style="background:#fff;"><span>姓名</span><span>电话号码</span><span>贷款金额</span><span>申请时间</span></li>
+	 					<div id="scrollDiv">
+	 						<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+	 						<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+	 						<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+	 						<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+	 						<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+	 						<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+	 						<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+	 						<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+	 						<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+	 						<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+	 						<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+	 						<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+	 						<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+	 						<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+	 						<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+	 						<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+	 						<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+	 						<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+	 						<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+	 						<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+	 						<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+	 						<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+	 						<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+	 						<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+	 						<li><span>吴**</span><span>131****4344</span><span>1000</span><span>2016-11-10</span></li>
+	 					</div>
+	 				</ul>
+	 			</div>
+	 		</div>
+	 	</div>
+	</div>
+	<script>
+	$(function(){
+	    //滚动插件
+	    (function($){
+	    $.fn.extend({
+	        Scroll:function(opt,callback){
+	            //参数初始化
+	            if(!opt) var opt={};
+	            var _this=this.eq(0).find("div:first");
+	            var lineH=_this.find("li:first").height(), //获取行高
+	            line=opt.line?parseInt(opt.line,10):parseInt(this.height()/lineH,10),
+	            speed=opt.speed?parseInt(opt.speed,10):5000, //卷动速度，数值越大，速度越慢（毫秒）
+	            timer=opt.timer?parseInt(opt.timer,10):5000; //滚动的时间间隔（毫秒）
+	            if(line==0) line=1;
+	            var upHeight=0-line*lineH;
+	            //滚动函数
+	            scrollUp=function(){
+	                _this.animate({
+	                    marginTop:upHeight
+	                },speed,function(){
+	                    for(i=1;i<=line;i++){
+	                        _this.find("li:first").appendTo(_this);
+	                    }
+	                    _this.css({marginTop:0});
+	                });
+	            }
+	            //鼠标事件绑定
+	            _this.hover(function(){
+	                clearInterval(timerID);
+	            },function(){
+	                timerID=setInterval("scrollUp()",timer);
+	            }).mouseout();
+	        }
+	    })
+	    })(jQuery);
+	    $(document).ready(function(){
+	        $("#scrollDiv").Scroll({line:1,speed:500,timer:1000});
+	    });
+	});
+
+	</script>
+
+	<div class="QRcode-wrap">
+		<div class="QRcode wow pulse animated" data-wow-iteration="5" data-wow-duration="0.1s" data-wow-delay="0.5s"><img src="images/QRcode.jpg" height="252" width="251" alt=""></div>
+		<div class="txt_QRcode mya wow zoomIn animated"><img src="images/9_txt.png" height="87" width="600" alt=""></div>
+	</div>
+
+	<div class="Drag-wrap" id="Drag-wrap">
+		<ul class="ul3 clearfix">
+			<li>
+				<div class="main">
+					<h3 class="pic pic1"><span>金大川1</span></h3>
+					<p class="txt">跟身边朋友借钱实在不好意思开口。感谢微木金融江湖救急，挺过这个月，省得欠朋友人情，月底发工资就好了。这年头，有信用才能过得有尊严。</p>
+				</div>
+			</li>
+			<li>
+				<div class="main">
+					<h3 class="pic pic2"><span>金大川2</span></h3>
+					<p class="txt">这个月赚的钱大半寄给了父母，又赶上女朋友生日和两个兄弟结婚随份子，还好有微木金融当后盾，哈哈我先干为敬了。</p>
+				</div>
+			</li>
+			<li>
+				<div class="main">
+					<h3 class="pic pic3"><span>金大川3</span></h3>
+					<p class="txt">手头最近不富裕，从微木金融领钱给自己买了一身好行头，顺利得找到一份挺不错的工作，微木功不可没啊~ </p>
+				</div>
+			</li>
+			<li>
+				<div class="main">
+					<h3 class="pic pic4"><span>金大川4</span></h3>
+					<p class="txt">几月前就在微木解决了资金问题。常年在外打工，准备换个走路到店里只要10分钟的房子，找的新房子租金押一付三还差2千。这次又靠平台解决了我房租问题，神奇的是居然还给自动降息了~~~~</p>
+				</div>
+			</li>
+		</ul>
+
+		<ol class="ol3 clearfix">
+			<!-- <li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li> -->
+		</ol>
+	</div>
+  <link rel="stylesheet" href="css/annimate.css">
+  <script src="./js/wow.min.js"></script>
+	<script>
+
+		/*banner轮播*/
+		bannerLunBo();
+	wow = new WOW({
+                boxClass: 'wow', // default 盒子类名
+                animateClass: 'animated', // default 为animate.css触发css动画的库
+                offset: 0, // default 偏移量
+                mobile: true, // default 是否支持手机
+                live: true // default 检查新元素
+            })
+	wow.init();
+	</script>
+
+	<div class="Advertisement-fixed" id="Advertisement-fixed">
+		<div class="Advertisement-wrap">
+			<div class="Advertisement-mask"></div>
+			<div class="Advertisement">
+				<img src="images/Advertisement.png" height="162" width="602" alt="">
+				<a class="close" href="javascript:;"></a>
+			</div>
+		</div>
+		<a class="open" href="javascript:;"><img src="images/Advertisement2.png" height="150" width="189" alt=""></a>
+	</div>
+	<!-- footer部分 -->
+
+	<div class="footer-wrap">
+        <div class="footer">
+            <div class="footTop clearfix">
+                <div class="footL clearfix">
+                    <dl>
+                        <dt>关于我们</dt>
+                        <dd><a href="javascript:;">公司介绍</a></dd>
+                        <dd><a href="javascript:;">加入我们</a></dd>
+                        <dd><a href="javascript:;">运营数据</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>常见问题</dt>
+                        <dd><a href="javascript:;">新手指引</a></dd>
+                        <dd><a href="javascript:;">常见问题</a></dd>
+                        <dd><a href="javascript:;">投诉建议</a></dd>
+                    </dl>
+                </div>
+                <div class="footR">
+                    <p class="txt2">65305518-转8027</p>
+                    <span class="txt3">(工作日) 9:00-17:30</span>
+                    <span class="email">chang@wemubank.com</span>
+                </div>
+                <div class="QRcode-ft">
+                    <img src="./images/footerQRcode.jpg" height="137" width="137" alt="">
+                    <span class="txt">微信扫一扫，领走1000元</span>
+                </div>
+            </div>
+            <div class="footB">
+                <div class="certificate" id="certificate">
+                    <ul class="ul4 clearfix">
+                        <li><a href="javascript:;"><img src="images/certificate1.png" height="38" width="112" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="images/certificate2.png" height="38" width="112" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="images/certificate3.png" height="38" width="112" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="images/certificate4.png" height="38" width="112" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <P class="txt">版权所有©2015百融骏金融超市网 All rights reserved | 备案号:京ICP备16008214号-1</P>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+     /*鼠标以上图片显示*/
+     certificate()
+    </script>
+
+  <!-- <script src="js/scrollReveal.js"></script>
+  <script>
+  	    (function(){
+  	        var config = {
+  	            after: '0s',
+  	            enter: 'bottom',
+  	            move: '24px',
+  	            over: '0.5s',
+  	            easing: 'ease-in-out',
+  	            viewportFactor: 0.5,
+  	            reset: true,
+  	            init: true
+  	        };
+  	        window.scrollReveal = new scrollReveal(config);
+  	    })();
+  	</script> -->
+
+
+    </body>
+</html>

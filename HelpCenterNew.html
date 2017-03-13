@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <!-- <script src="js/jquery-1.7.2.min.js"></script> -->
+        <script src="js/common.js"></script>
+        <script src="layer/layer.js"></script>
+        <script src="js/move.js"></script>
+        <script src="js/HelpCenter.js"></script>
+    </head>
+    <body>
+    <!-- 回到顶部部分 -->
+    <div class="pageCheck-wrap">
+    	<ul class="pageCheck">
+    		<li class="back" id="scrollBack"></li>
+    	</ul>
+    </div>
+    <!-- 导航 -->
+    <div class="header-wrap bg_white"><input type="hidden" id="header-wrap">
+    	<div class="header clearfix">
+            <a href="./index.html"><h1 class="logo" title="微木"><!-- <img src="images/logo1.png" height="37" width="130" alt=""> --></h1></a>
+            <div class="nav">
+                <ul class="navList">
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="./borrow.html">借款</a></li>
+                    <li><a href="./myAccount.html">个人中心</a></li>
+                    <li>
+                        <a href="./CompanyProfile.html">关于我们</a>
+                        <div class="slideToggle">
+                            <a href="./CompanyProfile.html">公司简介</a>
+                            <a href="./dataOperation.html">数据运营</a>
+                            <a href="./joinWeiMu.html">加入微木</a>
+                            <a href="./ContactUs.html">联系我们</a>
+                        </div>
+                    </li>
+                    <li  class="current">
+                        <a href="./HelpCenterNew.html">常见问题</a>
+                        <div class="slideToggle">
+                            <a href="./NoviceGuide.html">新手指引</a>
+                            <a href="./HelpCenterNew.html">常见问题</a>
+                            <a href="./Complaint.html">投诉建议</a>
+                        </div>
+                    </li>
+                    <li><a class="switch" id="switch" href="javascript:;">登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="CommonProblem-wrap">
+        <div class="CommonProblem">
+            <ul class="tab_title clearfix" id="tab_title">
+                <li class="li1">借款</li>
+                <li class="li2">放款</li>
+                <li class="li3">还款</li>
+                <i class="move" id="move"></i>
+            </ul>
+            <div class="tab_list_wrap" id="tab_list_wrap">
+                <ul class="tab_list" style="display:block;"> 
+                    <li>
+                        <h4 class="tit4">哪些人可以申请平台借款？</h4>
+                        <div class="txt-list">
+                            <p style="padding-bottom:20px;" class="txt">微木金融针对单位连续缴费社保三个月已上的用户</p>
+                        </div>
+                    </li>
+                     <li>
+                        <h4 class="tit4">哪些人可以申请平台借款？</h4>
+                        <div class="txt-list">
+                            <p class="txt">1）登录微木金融金融官网（www.wemubank.com）进行注册</p>
+                            <p class="txt">2）填写借款人详细信息，并上传相关文件</p>
+                            <p class="txt">3）提交申请，等待审核结果</p>
+                            <p style="padding-bottom:20px;" class="txt">4）审核通过，借款金到账</p>
+                        </div>
+                    </li>
+                     <li>
+                        <h4 class="tit4">没有按时还款会对我有什么影响？</h4>
+                        <div class="txt-list">
+                             <p style="padding-bottom:20px;" class="txt">没有按时还款将会产生违约金，严重的将可以影响个人信用记录，不良还款信息将提交至第三方征信机构（包括芝麻信用管理有限公司、腾讯征信有限公司等机构），记录在机构的个人信用信息库中。提醒务必按时还款，不要有逾期行为，以免造成不必要损失</p>
+                        </div>
+                    </li>
+                </ul>
+                 <ul class="tab_list" style="display:block;"> 
+                    <li>
+                        <h4 class="tit4">如何填写资料，审核更容易通过？</h4>
+                        <div class="txt-list">
+                            <p class="txt">1）请真实填写借款人本人及手机号，作假、冒充、顶替的号码都不予通过审                           核，仅需准确填写，无信用不良者及黑名单记录，给予通过</p>
+                            <p class="txt">2）银行卡信息务必正确填写</p>
+                            <p class="txt">3）联系地址不得有误、做假，需与相关信息资料库匹配</p>
+                            <p class="txt">4）审核人员必要时会电话核实，超过两次没有接听电话即视为主动放弃</p>
+                            <p class="txt">3）联系地址不得有误、做假，需与相关信息资料库匹配</p>
+                            <p style="padding-bottom:20px;" class="txt">5）在其他网站、银行有高额借款，或其他网站有不良还款记录者，不予审核如审核不通过，将不支持您再次申请，请务必填写准确</p>
+                        </div>
+                    </li>
+                     <li>
+                        <h4 class="tit4">根据您下单日期计算，默认下月今天是还款日；（逾期费用=滞纳金100元+借款金额*1%*逾期天数）</h4>
+                        <div class="txt-list">
+                            <p class="txt">1）登录微木金融金融官网（www.wemubank.com）进行注册</p>
+                            <p class="txt">2）填写借款人详细信息，并上传相关文件</p>
+                            <p class="txt">3）提交申请，等待审核结果</p>
+                             <p style="padding-bottom:20px;" class="txt">根据您下单日期计算，默认下月今天是还款日；（逾期费用=滞纳金100元+借款金额*1%*逾期天数）</p>
+                        </div>
+                    </li>
+                     <li>
+                        <h4 class="tit4">没有按时还款会对我有什么影响？</h4>
+                        <div class="txt-list">
+                             <p style="padding-bottom:20px;" class="txt">没有按时还款将会产生违约金，严重的将可以影响个人信用记录，不良还款信息将提交至第三方征信机构（包括芝麻信用管理有限公司、腾讯征信有限公司等机构），记录在机构的个人信用信息库中。提醒务必按时还款，不要有逾期行为，以免造成不必要损失</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="tab_list" style="display:block;"> 
+                    <li>
+                        <h4 class="tit4">怎么还款？</h4>
+                        <div class="txt-list">
+                            <p style="padding-bottom:20px;" class="txt">在您还款日前，将足额还款金存入账户，系统会自动扣款</p>
+                        </div>
+                    </li>
+                     <li>
+                        <h4 class="tit4">还款时间怎么计算？</h4>
+                        <div class="txt-list">
+                            <p style="padding-bottom:20px;" class="txt">根据您下单日期计算，默认下月今天是还款日；（逾期费用=滞纳金100元+借款金额*1%*逾期天数）</p>
+                        </div>
+                    </li>
+                     <li>
+                        <h4 class="tit4">没有按时还款会对我有什么影响？</h4>
+                        <div class="txt-list">
+                             <p style="padding-bottom:20px;" class="txt">没有按时还款将会产生违约金，严重的将可以影响个人信用记录，不良还款信息将提交至第三方征信机构（包括芝麻信用管理有限公司、腾讯征信有限公司等机构），记录在机构的个人信用信息库中。提醒务必按时还款，不要有逾期行为，以免造成不必要损失</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    HelpCenterTab();
+    </script>
+
+
+	<!-- footer部分 -->
+
+	<div class="footer-wrap">
+        <div class="footer">
+            <div class="footTop clearfix">
+                <div class="footL clearfix">
+                    <dl>
+                        <dt>关于我们</dt>
+                        <dd><a href="javascript:;">公司介绍</a></dd>
+                        <dd><a href="javascript:;">加入我们</a></dd>
+                        <dd><a href="javascript:;">运营数据</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>常见问题</dt>
+                        <dd><a href="javascript:;">新手指引</a></dd>
+                        <dd><a href="javascript:;">常见问题</a></dd>
+                        <dd><a href="javascript:;">投诉建议</a></dd>
+                    </dl>
+                </div>
+                <div class="footR">
+                    <p class="txt2">65305518-转8027</p>
+                    <span class="txt3">(工作日) 9:00-17:30</span>
+                    <span class="email">chang@wemubank.com</span>
+                </div>
+                <div class="QRcode-ft">
+                    <img src="./images/footerQRcode.jpg" height="137" width="137" alt="">
+                    <span class="txt">微信扫一扫，领走1000元</span>
+                </div>
+            </div>
+            <div class="footB">
+                <div class="certificate" id="certificate">
+                    <ul class="ul4 clearfix">
+                        <li><a href="javascript:;"><img src="images/certificate1.png" height="38" width="112" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="images/certificate2.png" height="38" width="112" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="images/certificate3.png" height="38" width="112" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="images/certificate4.png" height="38" width="112" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <P class="txt">版权所有©2015百融骏金融超市网 All rights reserved | 备案号:京ICP备16008214号-1</P>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+     /*鼠标以上图片显示*/
+     certificate()
+    </script>
+    </body>
+</html>
