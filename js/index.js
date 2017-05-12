@@ -3,8 +3,6 @@ window.onload = function(){
   /*  window.onscroll = function(){
         isNavShow('bg_white');
     }*/
-
-
     /* 首页banner */
     bannerChange();
     window.onresize = function(){
@@ -13,11 +11,8 @@ window.onload = function(){
     };
     //执行登录注册切换效果;
     //switchLoginReg();
-
     //banner自动轮播
     //bannerLunBo();
-
-
 /*    function isNavShow(className){//导航滚动效果
         var oHead = id('header-wrap');
         if(getTop()>100){
@@ -26,10 +21,8 @@ window.onload = function(){
             removeClass(oHead,'bg_white')
         };
     };*/
-
     /*执行小广告*/
-      Advertisement();
-
+      //Advertisement();
 }
 
  function bannerChange(){//首页banner 以及dody宽度控制;
